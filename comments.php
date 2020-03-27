@@ -31,7 +31,7 @@ echo $commentClass;
 ?>">
     <div id="<?php $comments->theId(); ?>">
         <div class="comment-author">
-<img class="avatar" src="/usr/themes/bright/img/avatar.jpg" data-src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="40" height="40">
+<img class="avatar" src="/usr/themes/hermit/img/avatar.jpg" data-src="<?php echo $avatar ?>" alt="<?php echo $comments->author; ?>" width="40" height="40">
             <cite class="fn"><?php $options->beforeAuthor();CommentAuthor($comments);$options->afterAuthor();?></cite>
             <span class="comment-reply" style="float:right"><?php $comments->reply(); ?></span>
         </div>
