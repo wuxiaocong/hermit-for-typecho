@@ -12,7 +12,7 @@ function parseContent($obj){
     $options = Typecho_Widget::widget('Widget_Options');
     $obj->content = preg_replace("/<a href=\"([^\"]*)\">/i", "<a href=\"\\1\" rel=\"nofollow\" target=\"_blank\" class=\"btn btn-primary\">", $obj->content);
     $obj->content = preg_replace("/<img src=\"([^\"]*)\" alt=\"([^\"]*)\" title=\"([^\"]*)\">/i", "<div class=\"postimg\"><a data-fancybox=\"gallery\" href=\"\\1\"><img src=\"\\1\" alt=\"\\2\" title=\"\\3\"></a><div class=\"meta\">[\\2]</div></div>", $obj->content);
-    $obj->content = preg_replace("/::([a-z]*)::/i", "<img src=\"/usr/themes/bright/img/face/\\1.gif\"/>", $obj->content);
+    $obj->content = preg_replace("/::([a-z]*)::/i", "<img src=\"/usr/themes/hermit/img/face/\\1.gif\"/>", $obj->content);
     echo trim($obj->content);
 }
 function CommentAuthor($obj, $autoLink = NULL, $noFollow = NULL) {
